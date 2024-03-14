@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2d425d, #070707); /* Gradient background similar to Ookla */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            color: #fff; /* White text color similar to Ookla */
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .go-button {
+            width: 200px; /* Width of the button */
+            height: 200px; /* Height of the button */
+            font-size: 24px; /* Larger font size similar to Ookla */
+            background-color: #b10e0e; /* Red button color */
+            color: #fff; /* White text color similar to Ookla */
+            border: none;
+            cursor: pointer;
+            outline: none;
+            border-radius: 50%; /* Circle button */
+            transition: background-color 0.3s ease; /* Smooth transition on hover similar to Ookla */
+            text-decoration: none; /* Remove underline from anchor tag */
+            display: inline-block; /* Ensure button appears as block element */
+            line-height: 200px; /* Center text vertically */
+            text-align: center; /* Center text horizontally */
+        }
+        .go-button:hover {
+            background: linear-gradient(to bottom, #eaeeef, #676869); /* Gradient color change on hover similar to Ookla */
+            color: #242423;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>It Seems You're in DANGER</h1>
+        <form id="redirectForm" action="/user_location_map" method="POST">
+            <input type="hidden" name="redirect_url" value="user_location_map.html">
+            <button type="submit" class="go-button">Help Me</button>
+        </form>
+        <p>Notifying nearby users...</p>
+    </div>
+</body>
+</html>
